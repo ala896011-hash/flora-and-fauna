@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:	border-box;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(14, 1fr);
+}
+.box1{
+	background: url(../img/flora1.jpg);
+	grid-area: 1/1/4/8;
+	background-size: contain;
+/*	background-size: 50% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+*/
+}
+.box2{
+	background: url(../img/flora2.jpg);
+	grid-area: 1/8/5/13;
+	background-size: contain;
+}
+.box3{
+	background: url(../img/flora3.jpg);
+	grid-area: 4/1/9/8;
+	background-size: contain;
+}
+.box4{
+	background: url(../img/flora4.jpg);
+	grid-area: 5/8/9/13;
+	background-size: contain;
+}
+.box5{
+	background: url(../img/flora5.jpg);
+	grid-area: 9/5/13/13;
+	background-size: contain;
+}
+/*.box6{
+	background: url(../img/flora6.jpg);
+	grid-area: 12/1/15/7;
+	background-size: contain;
+}*/
+.box6{
+	background: url(../img/flora6.jpg);
+	grid-area: 9/6/13/1;
+	background-size: contain;
+}
+.box7{
+	background: url(../img/flora7.jpg);
+	grid-area: 13/6/15/1;
+	background-size: contain;
+}
+.box8{
+	background: url(../img/flora8.jpg);
+	grid-area: 13/5/15/15;
+	background-size: contain;
+}
+.box_text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	background: white;
+	padding: 20px;
+}
+@media screen and (max-width: 360px){
+	.box_text{
+	font-size: 16px;
+}
+}
